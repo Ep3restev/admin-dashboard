@@ -13,18 +13,14 @@
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .content{
     display: grid;
     grid-template-columns:20% 80%;
-}
-
-
-.grid-element{
-    border: 2px solid;
+    height: 140vh;
 }
 
 .main{
@@ -35,7 +31,6 @@
 .sidebar{
     background-color: #7c3aed;
     width: 200px;
-    height: 100vh;
     display: flex;
     padding: 0px 10px;
     flex-direction: column;
@@ -68,6 +63,7 @@ img{
 
 .header{
     display: grid;
+    background-color: white;
     grid-template-columns: 74% 26%;
     grid-template-rows: 50% 50% 50% 50%;
 }
@@ -96,7 +92,6 @@ input[type=text]{
 .admin_greet{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 10px;
     padding: 16px 8px;
 }
@@ -111,5 +106,97 @@ input[type=text]{
 }
 
 .projects{
-    background-color: grey;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: #e2e8f0;
+}
+
+.projects h2{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.projects_container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 140px 140px 140px;
+    gap: 20px;
+}
+
+.project{
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 4% 96%;
+}
+
+.bar{
+    background-color:#FFDD7E;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.text{
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.texts{
+    padding:  8px 20px;
+    font-size: 8px;
+}
+.icons{
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+
+.icon_s{
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.extra_content{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.announcements_container{
+    margin-top: 20px;
+    width: 90%;
+    height: 60%;
+    background-color: white;
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 8px;
+    padding: 0 10px;
+}
+
+
+.announcement{
+    margin-top: 10px;
+}
+
+.trending_container{
+    margin-top: 20px;
+    width: 90%;
+    height: 60%;
+    background-color: white;
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 8px;
+    padding: 0 10px;
+}
+.trendin_user{
+    display: flex;
+    align-items: center;
+}
+.trendin_user img{
+    height: 20px;
 }
